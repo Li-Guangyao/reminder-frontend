@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e prod-9ggty5l307f8ba66 --n quickstartFunctions --r --project "/Users/lgy/Documents/projects/alarm-miniprogram" --report_first --report

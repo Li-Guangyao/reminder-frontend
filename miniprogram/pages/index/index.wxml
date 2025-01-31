@@ -1,0 +1,26 @@
+<view class="container">
+  <block wx:if="{{!subscribed}}">
+    <view class="modal" wx:if="{{showModal}}">
+      <view class="modal-content">
+        <view class="modal-header">
+          <icon type="success" size="40" color="#07C160"></icon>
+          <text class="modal-title">订阅消息通知</text>
+        </view>
+        <view class="modal-body">
+          <text>您好,我们希望能向您推送一些重要的消息,如天气预报等。请允许我们发送订阅消息。</text>
+        </view>
+        <view class="modal-footer">
+          <button class="btn btn-primary" bindtap="requestSubscription">允许</button>
+          <button class="btn btn-secondary" bindtap="closeModal">拒绝</button>
+        </view>
+      </view>
+    </view>
+    <button class="btn btn-primary" bindtap="requestSubscription">订阅消息通知</button>
+  </block>
+  <block wx:else>
+    <view class="success-message">
+      <icon type="success" size="20" color="#07C160"></icon>
+      <text>您已成功订阅消息通知!</text>
+    </view>
+  </block>
+</view>
